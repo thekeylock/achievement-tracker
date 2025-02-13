@@ -43,7 +43,7 @@ include("css.php");
         <div class="game">Marvel Rivals</div>
         <div class="achievement">play as groot</div>
         <div class="achievement">play as jeff</div>
-
     </div>
+    <div class="detailedachievement"></div>
 </body>
 </html>
