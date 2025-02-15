@@ -2,7 +2,6 @@
     html{
         height: 100%;
         width: 100%;
-        min-width: 350px;
     }
 
     html::-webkit-scrollbar{
@@ -78,34 +77,6 @@
         width: 0;
     }
 
-    .search-bar{
-        background-color: brown;
-        margin: 0;
-        height: 48px;
-    }
-
-    .search-bar input{
-        vertical-align: top;
-        padding: 0;
-        border: 0;
-        height: 100%;
-        width: calc(100% - 48px);
-        font-size: 150%;
-    }
-
-    .search-bar button{
-        margin: 0;
-        padding: 0;
-        border: 0;
-        height: 48px;
-        width: 48px;
-        background-color: red;
-    }
-
-    .search-bar button:hover{
-        background-color: darkred;
-    }
-
     .game{
         background-color: darkslateblue;
         padding: 10px 5%;
@@ -132,7 +103,6 @@
         background-color: green;
         float: right;
         height: calc((100vh - 77px) / 2);
-        min-width: 400px;
         width: calc(100vw - 400px - 77px * 2);
     }
 
@@ -140,8 +110,83 @@
         background-color: red;
         float: right;
         height: calc((100vh - 77px) / 2);
-        min-width: 400px;
         width: calc(100vw - 400px - 77px * 2);
+    }
+
+    .detailedachievement-title{
+        margin: 20px;
+        overflow: hidden;
+        text-overflow: clip;
+        text-align: center;
+        font-size: 40px;
+        white-space: nowrap;
+        background-color: yellow;
+        width: calc(100% - 40px);
+        height: 60px;
+    }
+
+    .detailedachievement-description{
+        margin: 20px;
+        overflow: hidden;
+        text-overflow: clip;
+        background-color: magenta;
+        width: calc(100% - 40px);
+        height: calc(100vh - 681.5px);
+    }
+
+    .detailedachievement-status{
+        background-color: rosybrown;
+        width: 100%;
+        height: calc(60px);
+    }
+
+    .addachievement form{
+        height: calc(100% - 100px);
+    }
+
+    .addachievement-title{
+        margin: 20px;
+        overflow: hidden;
+        text-overflow: clip;
+        text-align: center;
+        font-size: 40px;
+        white-space: nowrap;
+        background-color: white;
+        width: calc(100% - 40px);
+        height: 60px;
+    }
+
+    .addachievement-title{
+        padding: 0;
+        margin: 20px;
+        border: 0;
+        text-align: center;
+        font-size: 40px;
+        background-color: yellow;
+        width: calc(100% - 40px);
+        height: 60px;
+    }
+
+    .addachievement-description{
+        padding: 0;
+        margin: 20px;
+        border: 0;
+        text-align: center;
+        resize: none;
+        font-size: 25px;
+        background-color: magenta;
+        width: calc(100% - 40px);
+        height: calc(100% - 200px);
+        min-height: 50px;
+    }
+
+    .addachievement-status{
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background-color: rosybrown;
+        width: 100%;
+        height: 60px;
     }
 
     @media screen and (max-width: 1000px) {
@@ -150,8 +195,7 @@
         }
 
         .detailedachievement, .addachievement{
-            width: calc((100vw - 400px) + clamp(0, (100vw - 923px)) * 2);
-            /*hier was ik */
+            width: calc(100vw - 400px - max((100vw - 923px) * 2, 0px));
         }
     }
 

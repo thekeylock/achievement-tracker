@@ -8,10 +8,6 @@
 </head>
 <?php
 include("css.php");
-
-function testytest(){
-    echo"Hello World";
-}
 ?>
 <body>
     <div class="title"><h1>Achievement Tracker</h1></div>
@@ -21,9 +17,6 @@ function testytest(){
         <div class="left-left-bar"></div>
         <div class="right-left-bar"></div>
         <div class="left-bar">
-            <form action="">
-                <div class="search-bar"><input type="text" placeholder="Search" size="30"><button class="material-icons" type="submit">search</button></div>
-            </form>
             <div class="game">Hollow Knight</div>
             <div class="achievement" onclick="testytest()">get money</div>
             <div class="achievement">get a gun</div>
@@ -54,7 +47,18 @@ function testytest(){
             <div class="achievement">play as jeff</div>
         </div>
     </div>
-    <div class="detailedachievement"></div>
-    <div class="addachievement"></div>
+    <div class="detailedachievement">
+        <div class="detailedachievement-title">get moneyeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</div>
+        <div class="detailedachievement-description">get money by doing random chores and quests around the map get money by doing random chores and quests around the mapget money by doing random chores and quests around the mapget money by doing random chores and quests around the map get money by doing random chores and quests around the map get money by doing random chores and quests around the mapget money by doing random chores and quests around the mapget money by doing random chores and quests around the map get money by doing random chores and quests around the map get money by doing random chores and quests around the mapget money by doing random chores and quests around the mapget money by doing random chores and quests around the map get money by doing random chores and quests around the map get money by doing random chores and quests around the mapget money by doing random chores and quests around the mapget money by doing random chores and quests around the map get money by doing random chores and quests around the map get money by doing random chores and quests around the mapget money by doing random chores and quests around the mapget money by doing random chores and quests around the map get money by doing random chores and quests around the map get money by doing random chores and quests around the mapget money by doing random chores and quests around the mapget money by doing random chores and quests around the map get money by doing random chores and quests around the map get money by doing random chores and quests around the mapget money by doing random chores and quests around the mapget money by doing random chores and quests around the map get money by doing random chores and quests around the map get money by doing random chores and quests around the mapget money by doing random chores and quests around the mapget money by doing random chores and quests around the map</div>
+        <div class="detailedachievement-status"></div>
+    </div>
+    <div class="addachievement">
+        <div class="addachievement-title">Voeg een achievement toe</div>
+        <form action="php.php" method="POST">
+            <input type="text" placeholder="Title" class="addachievement-title" name="title" required>
+            <textarea  class="addachievement-description" placeholder="Description" name="description" required></textarea>
+            <button type="submit" class="addachievement-status"></button>
+        </form>
+    </div>
 </body>
 </html>
