@@ -18,33 +18,33 @@ include("css.php");
         <div class="right-left-bar"></div>
         <div class="left-bar">
             <div class="game">Hollow Knight</div>
-            <div class="achievement" onclick="testytest()">get money</div>
-            <div class="achievement">get a gun</div>
-            <div class="achievement">get a car</div>
+            <div class="achievement">get money<div class="status"></div></div>
+            <div class="achievement">get a gun<div class="status"></div></div>
+            <div class="achievement">get a car<div class="status"></div></div>
             <div class="game">Marvel Rivals</div>
-            <div class="achievement">play as groot</div>
-            <div class="achievement">play as jeff</div>
+            <div class="achievement">play as groot<div class="status"></div></div>
+            <div class="achievement">play as jeff<div class="status"></div></div>
             <div class="game">Hollow Knight</div>
-            <div class="achievement">get money</div>
-            <div class="achievement">get a gun</div>
-            <div class="achievement">get a car</div>
+            <div class="achievement">get money<div class="status"></div></div>
+            <div class="achievement">get a gun<div class="status"></div></div>
+            <div class="achievement">get a car<div class="status"></div></div>
             <div class="game">Marvel Rivals</div>
-            <div class="achievement">play as groot</div>
-            <div class="achievement">play as jeff</div>
+            <div class="achievement">play as groot<div class="status"></div></div>
+            <div class="achievement">play as jeff<div class="status"></div></div>
             <div class="game">Hollow Knight</div>
-            <div class="achievement">get money</div>
-            <div class="achievement">get a gun</div>
-            <div class="achievement">get a car</div>
+            <div class="achievement">get money<div class="status"></div></div>
+            <div class="achievement">get a gun<div class="status"></div></div>
+            <div class="achievement">get a car<div class="status"></div></div>
             <div class="game">Marvel Rivals</div>
-            <div class="achievement">play as groot</div>
-            <div class="achievement">play as jeff</div>
+            <div class="achievement">play as groot<div class="status"></div></div>
+            <div class="achievement">play as jeff<div class="status"></div></div>
             <div class="game">Hollow Knight</div>
-            <div class="achievement">get money</div>
-            <div class="achievement">get a gun</div>
-            <div class="achievement">get a car</div>
+            <div class="achievement">get money<div class="status"></div></div>
+            <div class="achievement">get a gun<div class="status"></div></div>
+            <div class="achievement">get a car<div class="status"></div></div>
             <div class="game">Marvel Rivals</div>
-            <div class="achievement">play as groot</div>
-            <div class="achievement">play as jeff</div>
+            <div class="achievement">play as groot<div class="status"></div></div>
+            <div class="achievement">play as jeff<div class="status"></div></div>
         </div>
     </div>
     <div class="detailedachievement">
@@ -53,7 +53,7 @@ include("css.php");
         <div class="detailedachievement-status"></div>
     </div>
     <div class="addachievement">
-        <div class="addachievement-title">Voeg een achievement toe</div>
+        <div class="addachievement-name">Voeg een achievement toe</div>
         <form action="php.php" method="POST">
             <input type="text" placeholder="Title" class="addachievement-title" name="title" required>
             <textarea  class="addachievement-description" placeholder="Description" name="description" required></textarea>

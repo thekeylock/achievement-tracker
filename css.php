@@ -93,10 +93,18 @@
 
     .achievement{
         background-color: blue;
-        height: max-content;
+        height: 40px;
         width: 85%;
-        padding: 10px 5% 10px 10%;
+        font-size: 25px;
+        padding: 0 5% 0 10%;
         white-space: nowrap;
+    }
+
+    .achievement .status{
+        background-color: red;
+        float: right;
+        height: 40px;
+        width: 40px;
     }
 
     .detailedachievement{
@@ -114,69 +122,69 @@
     }
 
     .detailedachievement-title{
-        margin: 20px;
+        margin: 10px;
         overflow: hidden;
         text-overflow: clip;
         text-align: center;
         font-size: 40px;
         white-space: nowrap;
         background-color: yellow;
-        width: calc(100% - 40px);
+        width: calc(100% - 20px);
         height: 60px;
     }
 
     .detailedachievement-description{
-        margin: 20px;
+        margin: 10px;
         overflow: hidden;
         text-overflow: clip;
         background-color: magenta;
-        width: calc(100% - 40px);
-        height: calc(100vh - 681.5px);
+        width: calc(100% - 20px);
+        height: calc(100% - 150px);
     }
 
     .detailedachievement-status{
         background-color: rosybrown;
         width: 100%;
-        height: calc(60px);
+        height: 60px;
     }
 
     .addachievement form{
-        height: calc(100% - 100px);
+        height: calc(100% - 35px);
     }
 
-    .addachievement-title{
-        margin: 20px;
+    .addachievement-name{
+        margin: 5px;
         overflow: hidden;
         text-overflow: clip;
         text-align: center;
-        font-size: 40px;
+        font-size: 20px;
         white-space: nowrap;
         background-color: white;
-        width: calc(100% - 40px);
-        height: 60px;
+        width: calc(100% - 10px);
+        height: 25px;
     }
 
     .addachievement-title{
         padding: 0;
-        margin: 20px;
+        margin: 5px;
         border: 0;
         text-align: center;
-        font-size: 40px;
+        font-size: 20px;
         background-color: yellow;
-        width: calc(100% - 40px);
-        height: 60px;
+        width: calc(100% - 10px);
+        height: 30px;
     }
 
     .addachievement-description{
         padding: 0;
-        margin: 20px;
+        margin: 5px;
         border: 0;
         text-align: center;
         resize: none;
-        font-size: 25px;
+        font-size: 10px;
         background-color: magenta;
-        width: calc(100% - 40px);
-        height: calc(100% - 200px);
+        width: calc(100% - 10px);
+        height: calc(115.5px);
         min-height: 50px;
     }
 
