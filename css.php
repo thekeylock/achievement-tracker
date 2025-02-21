@@ -12,15 +12,16 @@
     body{
         margin: 0;
         padding: 0;
-        background-color: purple;
+        background-color: #1b2838;
     }
 
     .title{
-        background-color: beige;
+        background-color:rgb(32, 36, 45);
         padding: 20px 0;
         width: 100%;
         height: 37px;
         white-space: nowrap;
+        color: #c7d5e0;
     }
 
     .title h1{
@@ -30,14 +31,14 @@
     }
 
     .outest-left-bar{
-        background-color: chocolate;
+        background-color:rgb(22, 25, 31);
         float: left;
         width: 77px;
         height: calc(100vh - 77px);
     }
 
     .outest-right-bar{
-        background-color: brown;
+        background-color: rgb(22, 25, 31);
         float: right;
         width: 77px;
         height: 100%;
@@ -54,19 +55,18 @@
         overflow-y: scroll;
         overflow-x: none;
         height: 100%;
-        min-width: min-content;
-        max-width: 350px;
+        width: 350px;
     }
 
     .left-left-bar{
-        background-color: orange;
+        background-color: #171a21;
         width: 25px;
         height: 100%;
         float: left;
     }
 
     .right-left-bar{
-        background-color: orangered;
+        background-color: #171a21;
         width: 25px;
         height: 100%;
         float: right;
@@ -78,44 +78,59 @@
     }
 
     .game{
-        background-color: darkslateblue;
+        background-color:rgb(27, 46, 61);
         padding: 10px 5%;
         font-size: 150%;
         white-space: nowrap;
         height: max-content;
-        width: 90%;
+        width: calc(350px - 10%);
+        color: #c7d5e0;
+        overflow: hidden;
     }
 
     .achievement:hover{
-        background-color: darkblue;
+        background-color:rgb(31, 52, 69);
         cursor: pointer;
     }
 
-    .achievement{
-        background-color: blue;
+    .achievement-container{
+        margin: 0;
+        padding: 0;
         height: 40px;
-        width: 85%;
-        font-size: 25px;
-        padding: 0 5% 0 10%;
-        white-space: nowrap;
+        width: 350px;
     }
 
-    .achievement .status{
-        background-color: red;
-        float: right;
+    .achievement{
+        display: inline-block;
+        background-color: #2a475e;
+        height: 40px;
+        width: calc(90% - 40px);
+        font-size: 25px;
+        padding: 0 0 0 10%;
+        white-space: nowrap;
+        color: #c7d5e0;
+        max-width: calc(310px - 10%);
+        overflow: hidden;
+    }
+
+    .status{
+        margin: 0;
+        padding: 0;
+        background-color: darkred;
         height: 40px;
         width: 40px;
+        float: right;
     }
 
     .detailedachievement{
-        background-color: green;
+        background-color: #2a475e;
         float: right;
         height: calc((100vh - 77px) / 2);
         width: calc(100vw - 400px - 77px * 2);
     }
 
     .addachievement{
-        background-color: red;
+        background-color: #2a475e;
         float: right;
         height: calc((100vh - 77px) / 2);
         width: calc(100vw - 400px - 77px * 2);
@@ -128,24 +143,32 @@
         text-align: center;
         font-size: 40px;
         white-space: nowrap;
-        background-color: yellow;
+        background-color: #1b2838;
+        color: #c7d5e0;
         width: calc(100% - 20px);
         height: 60px;
     }
 
     .detailedachievement-description{
         margin: 10px;
-        overflow: hidden;
         text-overflow: clip;
-        background-color: magenta;
+        overflow: scroll;
+        background-color: #1b2838;
+        color: #c7d5e0;
         width: calc(100% - 20px);
-        height: calc(100% - 150px);
+        height: calc(100% - 130px);
+    }
+
+    .detailedachievement-description::-webkit-scrollbar{
+        display: none;
+        width: 0;
     }
 
     .detailedachievement-status{
-        background-color: rosybrown;
+        background-color: darkgreen;
         width: 100%;
-        height: 60px;
+        height: 40px;
+
     }
 
     .addachievement form{
@@ -159,7 +182,8 @@
         text-align: center;
         font-size: 20px;
         white-space: nowrap;
-        background-color: white;
+        background-color: #1b2838;
+        color: #c7d5e0;
         width: calc(100% - 10px);
         height: 25px;
     }
@@ -170,9 +194,25 @@
         border: 0;
         text-align: center;
         font-size: 20px;
-        background-color: yellow;
-        width: calc(100% - 10px);
+        background-color: #1b2838;
+        color: #c7d5e0;
+        width: calc((100% - 20px)/2);
+        display: inline-block;
         height: 30px;
+    }
+
+    .addachievement-game{
+        padding: 0;
+        margin: 5px;
+        border: 0;
+        text-align: center;
+        font-size: 20px;
+        background-color: #1b2838;
+        color: #c7d5e0;
+        width: calc((100% - 20px)/2);
+        display: inline-block;
+        height: 30px;
+        float: right;
     }
 
     .addachievement-description{
@@ -182,19 +222,21 @@
         text-align: center;
         resize: none;
         font-size: 10px;
-        background-color: magenta;
+        background-color: #1b2838;
+        color: #c7d5e0;
         width: calc(100% - 10px);
-        height: calc(115.5px);
-        min-height: 50px;
+        height: calc(100% - 110px);
     }
 
-    .addachievement-status{
+    .addachievement-button{
         padding: 0;
         margin: 0;
         border: 0;
-        background-color: rosybrown;
+        background-color: darkred;
         width: 100%;
         height: 60px;
+        color: #c7d5e0;
+        
     }
 
     @media screen and (max-width: 1000px) {
@@ -207,6 +249,11 @@
         }
     }
 
+    @media screen and (min-width: 800px) {
+        .body{
+            overflow-y: hidden;
+        }
+    }
 
     @media screen and (max-width: 800px) {
 
